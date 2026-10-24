@@ -1,0 +1,34 @@
+# Dependencies and generated builds
+node_modules/
+dist/
+dist-installer/
+out/
+build/
+release/
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Local environment and credentials (do not commit)
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+*.secret
+*credentials*.json
+*secrets*.json
+
+# Local/private assessment data and exports
+local-data/
+private-data/
+customer-data/
+data-private/
+outputs/
+exports/
+tmp/
+temp/
+.cache/
