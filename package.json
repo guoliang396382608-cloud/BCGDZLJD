@@ -1,0 +1,36 @@
+{
+  "name": "agri-calc",
+  "version": "1.0.0",
+  "description": "耕地质量等级核算系统",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.agri.evalsystem",
+    "productName": "耕地质量核算平台",
+    "directories": {
+      "output": "dist-installer"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "app.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "耕地质量核算平台",
+      "installerIcon": "app.ico",
+      "uninstallerIcon": "app.ico",
+      "installerHeaderIcon": "app.ico"
+    }
+  },
+  "devDependencies": {
+    "electron": "^41.3.0",
+    "electron-builder": "^24.13.3"
+  }
+}
